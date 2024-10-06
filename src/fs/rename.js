@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 
-const renameFile = async () => {
+const rename = async () => {
     const wrongFilePath = path.join(process.cwd(), 'files', 'wrongFilename.txt');
     const properFilePath = path.join(process.cwd(), 'files', 'properFilename.md');
 
@@ -24,4 +24,4 @@ const renameFile = async () => {
     }
 };
 
-renameFile();
+await rename();
