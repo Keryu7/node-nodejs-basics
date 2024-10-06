@@ -8,7 +8,7 @@ import './files/c.js';
 const random = Math.random();
 
 let unknownObject;
-const baseDir = path.join(process.cwd(), 'files');;
+const baseDir = path.join(process.cwd(), 'files');
 
 if (random > 0.5) {
     unknownObject = JSON.parse(await fs.readFile(path.join(baseDir, 'a.json'), {encoding: 'utf-8'}));
