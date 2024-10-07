@@ -4,43 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3a5992b-98d0-4767-a3e1-cf0ac5abacb8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cli/args.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cli/env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cp/cp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cp/files/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fs/copy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fs/create.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fs/delete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fs/files/dontLookAtMe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fs/files/fileToRead.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fs/files/fileToRemove.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fs/files/fresh.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fs/files/hello.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fs/files/wrongFilename.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fs/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fs/read.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fs/rename.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hash/calcHash.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hash/files/fileToCalculateHashFor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/cjsToEsm.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/files/a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/files/b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/files/c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/streams/files/fileToRead.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/streams/files/fileToWrite.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/streams/read.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/streams/transform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/streams/write.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wt/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wt/worker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zip/compress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zip/decompress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zip/files/fileToCompress.txt" afterDir="false" />
+    <list default="true" id="b3a5992b-98d0-4767-a3e1-cf0ac5abacb8" name="Changes" comment="feat: added Child Processes tasks">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fs/files/fresh.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +14,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -58,24 +30,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Node.js.args.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.create.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.10.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.10.8&quot;,
-    &quot;js.ns.project&quot;: &quot;true&quot;,
-    &quot;js.ns.project.flavor&quot;: &quot;JavaScript&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.args.js.executor": "Run",
+    "Node.js.calcHash.js.executor": "Run",
+    "Node.js.cjsToEsm.cjs.executor": "Run",
+    "Node.js.compress.js.executor": "Run",
+    "Node.js.copy.js.executor": "Run",
+    "Node.js.cp.js.executor": "Run",
+    "Node.js.create.js.executor": "Run",
+    "Node.js.decompress.js.executor": "Run",
+    "Node.js.delete.js.executor": "Run",
+    "Node.js.env.js.executor": "Run",
+    "Node.js.esm.mjs.executor": "Run",
+    "Node.js.list.js.executor": "Run",
+    "Node.js.main.js.executor": "Run",
+    "Node.js.read.js.executor": "Run",
+    "Node.js.rename.js.executor": "Run",
+    "Node.js.transform.js.executor": "Debug",
+    "Node.js.worker.js.executor": "Run",
+    "Node.js.write.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "javascript.nodejs.core.library.configured.version": "22.9.0",
+    "javascript.nodejs.core.library.typings.version": "22.7.4",
+    "js.ns.project": "true",
+    "js.ns.project.flavor": "JavaScript",
+    "last_opened_file_path": "/Users/keryu/Projects/RS_School/node-nodejs-basics/src/modules",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/modules" />
+      <recent name="$PROJECT_DIR$/src/fs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/fs/files" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -96,7 +94,121 @@
       <workItem from="1728224082426" duration="687000" />
       <workItem from="1728224780834" duration="1564000" />
       <workItem from="1728226357348" duration="167000" />
+      <workItem from="1728226526376" duration="21518000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: added copy.js task">
+      <option name="closed" value="true" />
+      <created>1728227729278</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728227729278</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: added rename.js task">
+      <option name="closed" value="true" />
+      <created>1728228352279</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728228352279</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: added delete.js task&#10;refactor: some renames">
+      <option name="closed" value="true" />
+      <created>1728228912728</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728228912728</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: added list.js task">
+      <option name="closed" value="true" />
+      <created>1728229390537</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728229390537</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: added read.js task">
+      <option name="closed" value="true" />
+      <created>1728230394141</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728230394141</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: added args.js env.js tasks">
+      <option name="closed" value="true" />
+      <created>1728231793773</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728231793773</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: added esm.mjs task (Modules)">
+      <option name="closed" value="true" />
+      <created>1728234318940</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728234318940</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: added esm.mjs task (Modules)">
+      <option name="closed" value="true" />
+      <created>1728234340393</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728234340393</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: added calcHash.js task (Hash)">
+      <option name="closed" value="true" />
+      <created>1728235474160</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728235474160</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: added Streams tasks">
+      <option name="closed" value="true" />
+      <created>1728237550772</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728237550772</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: added Zlib tasks">
+      <option name="closed" value="true" />
+      <created>1728238757394</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728238757394</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: added Zlib tasks">
+      <option name="closed" value="true" />
+      <created>1728238771319</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728238771319</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: added Worker Threads tasks">
+      <option name="closed" value="true" />
+      <created>1728322231644</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728322231644</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: added Child Processes tasks">
+      <option name="closed" value="true" />
+      <created>1728323125260</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1728323125260</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,10 +219,37 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: added copy.js task" />
+    <MESSAGE value="feat: added rename.js task" />
+    <MESSAGE value="feat: added delete.js task&#10;refactor: some renames" />
+    <MESSAGE value="feat: added list.js task" />
+    <MESSAGE value="feat: added read.js task" />
+    <MESSAGE value="feat: added args.js env.js tasks" />
+    <MESSAGE value="feat: added esm.mjs task (Modules)" />
+    <MESSAGE value="feat: added calcHash.js task (Hash)" />
+    <MESSAGE value="feat: added Streams tasks" />
+    <MESSAGE value="feat: added Zlib tasks" />
+    <MESSAGE value="feat: added Worker Threads tasks" />
+    <MESSAGE value="feat: added Child Processes tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added Child Processes tasks" />
   </component>
 </project>
